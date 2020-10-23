@@ -1,28 +1,32 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<main>
+  <h1>New TV show app!!</h1>
+  <ul 
+  <li v-for='(show, index) in shows' :key='index' :value='index'> {{ show.name }} </li>
+
+  </ul>
+</main>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+
+  data(){
+    return{
+      shows: [],
+      selectedShow: null
+    }
+  },
+
+  mounted(){
+    fetch('http://api.tvmaze.com/shows')
+    .then(response => response.json())
+    .then(data => this.shows = data);
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
