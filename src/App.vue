@@ -45,5 +45,20 @@ export default {
 </script>
 
 <style lang='css' scoped>
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;800&display=swap");
+
+body{
+  font-family: 'Kanit', sans-serif;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  width: 100vw;
+  height: 50vh; 
+}
+
+header {
+  font-size: 30pt;
+  margin: 0;
+}
 
 </style>

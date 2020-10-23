@@ -1,29 +1,13 @@
-# tv_show_app
+# TV Show, vue application with requests
 
-## Project setup
-```
-npm install
-```
+Brief: Your task is to create an application that makes a request to an API and displays the data.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+#
+MVP...
 
-### Compiles and minifies for production
-```
-npm run build
-```
+• The application should display data from an API request.
 
-### Run your unit tests
-```
-npm run test:unit
-```
+• The application should have a clear separation of concerns (multiple components)
 
-### Run your end-to-end tests
-```
-npm run test:e2e
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+• Take input from the user to update the page. You could update the page by filtering or manipulating the data on user interaction, or you might make further API requests to load more data that is then displayed.
+#
