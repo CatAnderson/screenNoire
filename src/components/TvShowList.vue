@@ -1,9 +1,9 @@
 <template lang='html'>
 <main>
   <div class='scroll-box'>
-    <img @click='handleClick' id="selected-tv-show" v-for='(show, index) in shows' :key='index' :value='index' :src="show.image.medium" alt="tv show poster">
+    <img v-on:click='handleImageClick(show)' v-for='(show, index) in shows' :key='index' :value='index' :src="show.image.medium" alt="tv show poster">
   </div>
-  <h2> pick a show... </h2>
+  <h2> CHOOSE YOUR SHOW! </h2>
 </main>  
 </template>
 
@@ -21,8 +21,10 @@ export default {
     },
 
     methods:{
-        handleClick: function(){
-            eventBus.$emit('selected-tv-show', this.selectedTvShow)
+        handleImageClick: function(show){
+          this.selectedTvShow = show
+
+          eventBus.$emit('selected-tv-show', this.selectedTvShow)
         }
     }
 
@@ -33,19 +35,36 @@ export default {
 
 
 main {
-  
+  background-color: #0e0b16;
   display: grid;
-  grid-template-columns: 80% 20%;
+  grid-column: span;
+  grid-template-columns: 70% 30%;
+  margin: 0px;
+  padding: 50px;
 }
 
 h2 {
-  font-size: 60pt;
+  color: #a239ca;
+  font-size: 70pt;
+  font-weight: 600;
+  margin: 0px;
+  padding: 0px;
+  letter-spacing: 5pt;
+}
+
+img{
+  width: 300px;
+  margin: 30px;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; */
 }
 
 .scroll-box{
-  width: 80vw;
+  width: 70vw;
   height: 40vh;
   overflow: scroll;
+  margin: 0px;
+  padding: 0px;
 }
 
 </style>
