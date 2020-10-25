@@ -86,9 +86,14 @@ button {
     text-decoration: none;
     text-align: center;
     line-height: 5px;
+    cursor: pointer;
 
     font-size: 50pt;
     font-weight: 800;
+}
+
+button:hover{
+  background-color: #4717f6;
 }
 
 </style>

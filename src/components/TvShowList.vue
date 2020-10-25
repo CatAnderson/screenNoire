@@ -57,6 +57,7 @@ h2 {
 img{
   width: 15vw;
   margin: 40px;
+  cursor: pointer;
 }
 
 .scroll-box{
