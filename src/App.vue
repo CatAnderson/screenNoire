@@ -1,7 +1,7 @@
 <template lang='html'>
   <body>
     <header>
-      <h1>showNoire</h1>
+      <h1>screenNoire</h1>
     </header>
 
     <main>

@@ -56,9 +56,7 @@ h2 {
 
 img{
   width: 15vw;
-  margin: 30px;
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; */
+  margin: 40px;
 }
 
 .scroll-box{
@@ -66,7 +64,6 @@ img{
   height: 40vh;
   overflow: auto;
   white-space: nowrap;
-  /* overflow: scroll; */
   margin-top: 50px;
   padding: 50px;
 }
