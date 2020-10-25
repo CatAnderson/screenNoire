@@ -92,13 +92,13 @@ header {
 }
 
 h1 {
-  font-size: 80pt;
+  font-size: 200pt;
   font-weight: 300;
   letter-spacing: 8pt;
   border: #e7dfdd;
   border-style: dotted;
-  border-width: 10px;
-  margin: 0px 300px;
+  border-width: 30px;
+  margin: 0px 2500px;
 }
 
 section {
@@ -112,25 +112,26 @@ button{
     background-color: #4717f6;
     color: #e7dfdd;
 
-    width: 200px;
+    width: 500px;
     height: 10px;
 
-    padding: 20px;
-    border-radius: 10px;
+    padding: 70px;
+    border-radius: 30px;
     margin: auto;
     margin-bottom: 50px;
 
     text-decoration: none;
     text-align: center;
-    line-height: 2px;
+    line-height: 5px;
 
-    font-size: 20pt;
+    font-size: 50pt;
     font-weight: 800;
 }
 
 footer{
+  font-size: 40pt;
   background-image: linear-gradient(to right, #a239ca, #4717f6 );
   color: #e7dfdd;
-  padding: 30px;
+  padding: 60px;
 }
 </style>

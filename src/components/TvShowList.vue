@@ -45,17 +45,17 @@ main {
 
 h2 {
   color: #a239ca;
-  font-size: 100pt;
+  font-size: 300pt;
   font-weight: 600;
   margin: 0px;
   padding: 0px;
   letter-spacing: 5pt;
-  line-height: 150pt;
+  line-height: 250pt;
   align-self: center;
 }
 
 img{
-  width: 300px;
+  width: 15vw;
   margin: 30px;
   /* display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr; */

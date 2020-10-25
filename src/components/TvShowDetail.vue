@@ -3,9 +3,9 @@
         <!-- <h1>this is the tv show details</h1> -->
         <section v-if='show'>
             <hgroup>
-            <h3>{{ show.name }}</h3>
+            <h3>{{ show.name.toUpperCase() }}</h3>
             <p>{{ show.summary.replace(/(<([^>]+)>)/gi,"") }}</p>
-            <h4>GENRE:<br> {{ show.genres.toString() }}</h4>
+            <h4>GENRE:<br> {{ show.genres.join(`, &nbsp;`).toString() }}</h4>
             <h4>SHOW RATING: <br> {{ show.rating.average }}</h4>
             <h4>STATUS: <br>{{ show.status }}</h4>
             <!-- <button v-if='!favouriteTvShows.includes(selectedTvShow)' v-on:click='addToFavourites'>add show</button> -->
@@ -39,8 +39,8 @@ article{
     display: block;
     border: #a239ca;
     border-style: dotted;
-    border-width: 10px;
-    margin: 50px;
+    border-width: 30px;
+    margin: 80px;
     justify-items: center;
 }
 
@@ -51,7 +51,7 @@ section{
 }
 
 h3 {
-    font-size: 40pt;
+    font-size: 150pt;
     font-weight: 400;
     margin: 0px;
     padding: 20px;
@@ -59,23 +59,24 @@ h3 {
 }
 
 p {
-    font-size: 16pt;
+    font-size: 40pt;
     font-weight: 300;
     margin: 0px;
-    padding: 0px 50px;
+    padding: 0px 80px;
     /* letter-spacing: 5pt; */
 }
 
 h4 {
-    font-size: 22pt;
+    font-size: 40pt;
     font-weight: 300;
     color: #a239ca;
     letter-spacing: 2pt;
 }
 
 img {
-    height: 50vh;
+    height: 70vh;
     max-width: 100%;
+    justify-content:right;
 }
 
 </style>

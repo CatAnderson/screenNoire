@@ -41,12 +41,12 @@ aside{
     display: block;
     border: #a239ca;
     border-style: dotted;
-    border-width: 10px;
-    margin: 50px;
+    border-width: 30px;
+    margin: 80px;
 }
 
 h1{
-    font-size: 40pt;
+    font-size: 150pt;
     font-weight: 400;
     margin: 0px;
     padding: 20px;
@@ -74,19 +74,19 @@ button {
     background-color: #a239ca;
     color: #e7dfdd;
 
-    width: 200px;
+    width: 500px;
     height: 10px;
 
-    padding: 20px;
-    border-radius: 10px;
+    padding: 70px;
+    border-radius: 30px;
     margin: auto;
+    margin-bottom: 50px;
 
     text-decoration: none;
     text-align: center;
-    /* vertical-align: middle; */
-    line-height: 2px;
+    line-height: 5px;
 
-    font-size: 20pt;
+    font-size: 50pt;
     font-weight: 800;
 }
 
