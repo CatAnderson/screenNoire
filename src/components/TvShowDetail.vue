@@ -4,8 +4,11 @@
         <section v-if='show'>
             <hgroup>
             <h3>{{ show.name }}</h3>
-            <p>{{ show.summary }}</p>
-            <h4>genres:{{ show.genres }}</h4>
+            <p>{{ show.summary.replace(/(<([^>]+)>)/gi,"") }}</p>
+            <h4>GENRE:<br> {{ show.genres.toString() }}</h4>
+            <h4>SHOW RATING: <br> {{ show.rating.average }}</h4>
+            <h4>STATUS: <br>{{ show.status }}</h4>
+            <!-- <button v-if='!favouriteTvShows.includes(selectedTvShow)' v-on:click='addToFavourites'>add show</button> -->
             </hgroup>
             <img :src="show.image.original" alt="tv show poster">
         </section>
@@ -15,7 +18,7 @@
 </template>
 
 <script>
-import { eventBus } from '@/main.js';
+// import { eventBus } from '@/main.js';
 
 export default {
     name: 'tv-show-detail',
@@ -61,6 +64,13 @@ p {
     margin: 0px;
     padding: 0px 50px;
     /* letter-spacing: 5pt; */
+}
+
+h4 {
+    font-size: 22pt;
+    font-weight: 300;
+    color: #a239ca;
+    letter-spacing: 2pt;
 }
 
 img {

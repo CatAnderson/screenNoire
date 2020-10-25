@@ -109,7 +109,7 @@ section {
 
 button{
     display: block;
-    background-color: #a239ca;
+    background-color: #4717f6;
     color: #e7dfdd;
 
     width: 200px;
@@ -118,10 +118,10 @@ button{
     padding: 20px;
     border-radius: 10px;
     margin: auto;
+    margin-bottom: 50px;
 
     text-decoration: none;
     text-align: center;
-    /* vertical-align: middle; */
     line-height: 2px;
 
     font-size: 20pt;

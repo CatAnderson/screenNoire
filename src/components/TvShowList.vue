@@ -3,7 +3,7 @@
   <div class='scroll-box'>
     <img v-on:click='handleImageClick(show)' v-for='(show, index) in shows' :key='index' :value='index' :src="show.image.medium" alt="tv show poster">
   </div>
-  <h2> CHOOSE YOUR SHOW! </h2>
+  <h2> CHOOSE <br> YOUR <br> SHOW! </h2>
 </main>  
 </template>
 
@@ -45,11 +45,13 @@ main {
 
 h2 {
   color: #a239ca;
-  font-size: 70pt;
+  font-size: 100pt;
   font-weight: 600;
   margin: 0px;
   padding: 0px;
   letter-spacing: 5pt;
+  line-height: 150pt;
+  align-self: center;
 }
 
 img{
