@@ -5,9 +5,9 @@
             <hgroup>
             <h3>{{ show.name.toUpperCase() }}</h3>
             <p>{{ show.summary.replace(/(<([^>]+)>)/gi,"") }}</p>
-            <h4>GENRE:<br> {{ show.genres.join(`, &nbsp;`).toString() }}</h4>
+            <h4>GENRE: <br> {{ show.genres.join(`, &nbsp;`).toString() }}</h4>
             <h4>SHOW RATING: <br> {{ show.rating.average }}</h4>
-            <h4>STATUS: <br>{{ show.status }}</h4>
+            <h4>STATUS: <br> {{ show.status }}</h4>
             <!-- <button v-if='!favouriteTvShows.includes(selectedTvShow)' v-on:click='addToFavourites'>add show</button> -->
             </hgroup>
             <img :src="show.image.original" alt="tv show poster">
@@ -26,9 +26,15 @@ export default {
 
     data(){
         return{
-        selectedTvShow: null
+        selectedTvShow: null,
+        favouriteTvShows: []
         }
     },
+    // methods: {
+    //     addToFavourites: function(){
+    //         this.favouriteTvShows.push(this.selectedTvShow)
+    //     }
+    // },
 
 }
 </script>
@@ -67,10 +73,13 @@ p {
 }
 
 h4 {
-    font-size: 40pt;
-    font-weight: 300;
+    font-size: 60pt;
+    font-weight: 600;
     color: #a239ca;
     letter-spacing: 2pt;
+}
+hgroup{
+    align-self: center;
 }
 
 img {

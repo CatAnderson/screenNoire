@@ -64,9 +64,11 @@ img{
 .scroll-box{
   width: 70vw;
   height: 40vh;
-  overflow: scroll;
-  margin: 0px;
-  padding: 0px;
+  overflow: auto;
+  white-space: nowrap;
+  /* overflow: scroll; */
+  margin-top: 50px;
+  padding: 50px;
 }
 
 </style>

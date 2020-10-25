@@ -43,6 +43,7 @@ aside{
     border-style: dotted;
     border-width: 30px;
     margin: 80px;
+    
 }
 
 h1{
