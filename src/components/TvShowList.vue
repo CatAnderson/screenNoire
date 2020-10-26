@@ -40,23 +40,23 @@ main {
   grid-column: span;
   grid-template-columns: 70% 30%;
   margin: 0px;
-  padding: 50px;
+  padding: 20px;
 }
 
 h2 {
   color: #a239ca;
-  font-size: 300pt;
+  font-size: 50pt;
   font-weight: 600;
   margin: 0px;
   padding: 0px;
   letter-spacing: 5pt;
-  line-height: 250pt;
+  line-height: 50pt;
   align-self: center;
 }
 
 img{
   width: 15vw;
-  margin: 40px;
+  margin: 10px;
   cursor: pointer;
 }
 
@@ -65,8 +65,8 @@ img{
   height: 40vh;
   overflow: auto;
   white-space: nowrap;
-  margin-top: 50px;
-  padding: 50px;
+  margin-top: 20px;
+  padding: 20px;
 }
 
 </style>

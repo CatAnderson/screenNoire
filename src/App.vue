@@ -87,18 +87,18 @@ body{
 header {
   background-image: linear-gradient(to right, #a239ca, #4717f6 );
   color: #e7dfdd;
-  padding-bottom: 50px;
-  padding-top: 50px;
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 
 h1 {
-  font-size: 100pt;
+  font-size: 50pt;
   font-weight: 300;
   letter-spacing: 8pt;
   border: #e7dfdd;
   border-style: dotted;
-  border-width: 20px;
-  margin: 0px 2500px;
+  border-width: 8px;
+  margin: 0px 500px;
 }
 
 section {
@@ -112,20 +112,20 @@ button{
     background-color: #4717f6;
     color: #e7dfdd;
 
-    width: 500px;
-    height: 10px;
+    width: 120px;
+    height: 5px;
 
-    padding: 70px;
-    border-radius: 30px;
+    padding: 20px;
+    border-radius: 10px;
     margin: auto;
     margin-bottom: 50px;
 
     text-decoration: none;
     text-align: center;
-    line-height: 5px;
+    line-height: 2px;
     cursor: pointer;
 
-    font-size: 50pt;
+    font-size: 12pt;
     font-weight: 800;
 }
 
@@ -134,9 +134,9 @@ button:hover{
 }
 
 footer{
-  font-size: 40pt;
+  font-size: 12pt;
   background-image: linear-gradient(to right, #a239ca, #4717f6 );
   color: #e7dfdd;
-  padding: 60px;
+  padding: 30px;
 }
 </style>

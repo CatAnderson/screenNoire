@@ -45,8 +45,8 @@ article{
     display: block;
     border: #a239ca;
     border-style: dotted;
-    border-width: 30px;
-    margin: 80px;
+    border-width: 8px;
+    margin: 40px;
     justify-items: center;
 }
 
@@ -57,7 +57,7 @@ section{
 }
 
 h3 {
-    font-size: 150pt;
+    font-size: 30pt;
     font-weight: 400;
     margin: 0px;
     padding: 20px;
@@ -65,15 +65,15 @@ h3 {
 }
 
 p {
-    font-size: 40pt;
+    font-size: 10pt;
     font-weight: 300;
     margin: 0px;
-    padding: 0px 80px;
+    padding: 0px 40px;
     /* letter-spacing: 5pt; */
 }
 
 h4 {
-    font-size: 60pt;
+    font-size: 14pt;
     font-weight: 600;
     color: #a239ca;
     letter-spacing: 2pt;

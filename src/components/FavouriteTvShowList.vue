@@ -41,13 +41,13 @@ aside{
     display: block;
     border: #a239ca;
     border-style: dotted;
-    border-width: 30px;
-    margin: 80px;
+    border-width: 8px;
+    margin: 40px;
     
 }
 
 h1{
-    font-size: 150pt;
+    font-size: 30pt;
     font-weight: 400;
     margin: 0px;
     padding: 20px;
@@ -57,7 +57,7 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
-    padding: 0px 40px 40px 40px;
+    padding: 0px 10px 10px 10px;
 }
 li {
     list-style-type: none;
@@ -66,7 +66,7 @@ li {
 li > img{
     height: 20vh;
     padding: 10px;
-    padding-top: 50px;
+    padding-top: 20px;
     /* margin: 20px; */
 }
 
@@ -75,20 +75,20 @@ button {
     background-color: #a239ca;
     color: #e7dfdd;
 
-    width: 500px;
-    height: 10px;
+    width: 120px;
+    height: 5px;
 
-    padding: 70px;
-    border-radius: 30px;
+    padding: 20px;
+    border-radius: 10px;
     margin: auto;
     margin-bottom: 50px;
 
     text-decoration: none;
     text-align: center;
-    line-height: 5px;
+    line-height: 2px;
     cursor: pointer;
 
-    font-size: 50pt;
+    font-size: 12pt;
     font-weight: 800;
 }
 
