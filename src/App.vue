@@ -44,7 +44,7 @@ export default {
   mounted(){
     fetch('http://api.tvmaze.com/shows')
       .then(response => response.json())
-      .then(data => this.shows = data);
+      .then(data => this.shows = data.sort((a, b) => (a.name > b.name) ? 1 : (b.name > a.name) ? -1 : 0));
 
     eventBus.$on('selected-tv-show', (show) => {
       this.selectedTvShow = show
@@ -92,12 +92,12 @@ header {
 }
 
 h1 {
-  font-size: 200pt;
+  font-size: 100pt;
   font-weight: 300;
   letter-spacing: 8pt;
   border: #e7dfdd;
   border-style: dotted;
-  border-width: 30px;
+  border-width: 20px;
   margin: 0px 2500px;
 }
 
